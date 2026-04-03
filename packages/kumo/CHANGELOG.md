@@ -1,5 +1,15 @@
 # @cloudflare/kumo
 
+## 1.18.0
+
+### Minor Changes
+
+- a685953: Expose `delay` and `closeDelay` props on Tooltip component to control open and close timing. These props are forwarded to the underlying Base UI Trigger component.
+
+### Patch Changes
+
+- 2bb8628: Fix CodeBlock crash when an unsupported `lang` value is passed at runtime. The `codeVariants()` function now uses optional chaining with a nullish coalescing fallback to the default language, matching the defensive pattern already used by `switchVariants()` and `badgeVariants()`.
+
 ## 1.17.0
 
 ### Minor Changes
